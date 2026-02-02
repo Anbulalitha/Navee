@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navee</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to top, #000010, #001a33); /* night sky */
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+    }
+
+    p {
+      margin-bottom: 40px;
+    }
+
+    .moon {
+      position: absolute;
+      font-size: 3rem;
+      animation: floatUp 10s linear infinite;
+    }
+
+    @keyframes floatUp {
+      0%   { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      10%  { opacity: 1; }
+      50%  { transform: translateY(50vh) rotate(20deg); }
+      100% { transform: translateY(-20vh) rotate(-20deg); opacity: 0; }
+    }
+
+    /* Different moons with delays and positions */
+    .moon:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .moon:nth-child(2) { left: 30%; animation-delay: 3s; font-size: 2.5rem; }
+    .moon:nth-child(3) { left: 50%; animation-delay: 6s; font-size: 3.5rem; }
+    .moon:nth-child(4) { left: 70%; animation-delay: 1s; font-size: 2rem; }
+    .moon:nth-child(5) { left: 85%; animation-delay: 4s; font-size: 3rem; }
+
+    a {
+      color: #ffd700;
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin-top: 20px;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Navee! 🌛</h1>
+  <p>This will makes u as suprise that i will give u!</p>
+
+ 
+
+  <!-- Floating moons -->
+  <span class="moon">💛</span>
+  <span class="moon">💛</span>
+  <span class="moon">💛</span>
+  <span class="moon">💛</span>
+  <span class="moon">💛</span>
+
+  <!-- Link to next page -->
+  <a href="next.html">Click Here</a>
+</body>
+</html>
